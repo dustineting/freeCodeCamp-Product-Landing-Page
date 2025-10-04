@@ -1,0 +1,175 @@
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    background-color: #0f1920;
+    color: #ffffff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+    background-color: #111c20;
+    position: sticky;
+    top: 0;
+}
+
+#header-img {
+    height: 50px;
+}
+
+#nav-bar {
+    display: flex;
+    gap: 2em;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #ff4655;
+}
+
+/* Main Styles */
+main {
+    padding: 2em;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 3em;
+}
+
+h1 {
+    color: #ff4655;
+    margin-bottom: 1em;
+}
+
+.website-link {
+    color: #ff4655;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.website-link:hover {
+    text-decoration: underline;
+}
+
+/* Video Styles */
+iframe {
+    display: block;
+    margin: 1.5em auto;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+/* Buy Styles */
+.pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    margin-top: 1em;
+}
+
+.price-card {
+    background: #1b2735;
+    padding: 1.5em;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.price-card h3 {
+    margin-bottom: 0.5em;
+    color: #ff4655;
+}
+
+.price-card button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background: #ff4655;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.price-card button:hover {
+    background: #e53945;
+}
+
+/* Form Styles */
+#promotions {
+    text-align: center;
+    background: #1b2735;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#email {
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    width: 60%;
+    max-width: 300px;
+    margin-right: 0.5em;
+}
+
+#submit {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background: #ff4655;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background: #cb3945;
+}
+
+/* Footer Styles */
+footer {
+    font-style: italic;
+    text-align: center;
+}
+
+/* Mobile Viewport */
+@media (max-width: 680px) {
+    #nav-bar {
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+
+    .pricing {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #email {
+        width: 100%;
+        margin: 0.5em 0;
+    }
+
+    #submit {
+        width: 100%;
+    }
+}
